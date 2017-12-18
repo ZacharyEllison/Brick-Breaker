@@ -1,0 +1,28 @@
+<html>
+{{% extends "layout.html" %}}
+<head>
+    {% block title %} Breakout {% endblock %}
+
+    <style>
+        body {
+        background: #202028;
+        color: #fff;
+        font-family: sans-serif;
+        font-size: 2em;
+        text-align: center;
+        }
+        canvas {
+        border: solid .2em #fff;
+        height: 90vh;
+        }
+
+    </style>
+</head>
+<body>
+{% block main %}
+    <div id='score'></div>
+    <canvas id='breakout' width=480 height=240 />
+    <script src='main.js'></script>
+{% endblock %}
+</body>
+</html>
